@@ -1,0 +1,17 @@
+public class Test {
+	public static void main(String[] args) {
+		int child = 18;//低于18
+		int youth = 28;//19-28
+		int middleAged = 55;//29-55
+		int myAge = 56;
+		if(myAge <= child) {
+			System.out.println("少年");
+		} else if(myAge > child && myAge <= youth) {
+			System.out.println("青年");
+		} else if(myAge > youth && myAge <= middleAged) {
+			System.out.println("中年");
+		} else {
+			System.out.println("老年");
+		}
+	}
+}
