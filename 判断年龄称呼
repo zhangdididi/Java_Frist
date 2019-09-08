@@ -7,11 +7,11 @@ public class Test {
 		//小于18
 		if(myAge <= child) {
 			System.out.println("少年");
-		} else if(myAge > child && myAge <= youth) {
+		} else if(myAge > child && myAge <= youth) {//大于18小于28
 			System.out.println("青年");
-		} else if(myAge > youth && myAge <= middleAged) {
+		} else if(myAge > youth && myAge <= middleAged) {//大于28小于55
 			System.out.println("中年");
-		} else {
+		} else {                                        //大于55
 			System.out.println("老年");
 		}
 	}
