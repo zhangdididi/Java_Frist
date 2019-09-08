@@ -4,6 +4,7 @@ public class Test {
 		int youth = 28;//19-28
 		int middleAged = 55;//29-55
 		int myAge = 56;
+		//小于18
 		if(myAge <= child) {
 			System.out.println("少年");
 		} else if(myAge > child && myAge <= youth) {
