@@ -1,0 +1,22 @@
+class Solution {
+    public int countPrimeSetBits(int L, int R) {
+        int count = 0;
+        int num = 0;
+        int tmp = 0;
+        while(L <= R) {
+            tmp = L;
+            count = 0;
+            while(tmp > 0) {
+                if((tmp & 1) == 1) {
+                    count ++;
+                }
+                tmp >>= 1;
+            }
+            if(count == 2 || count == 3 || count == 5 || count == 7 || count == 11 || count == 13 || count == 17 || count == 19) {
+                num++;
+            }
+            L++;
+        }
+        return num;
+    }
+}
