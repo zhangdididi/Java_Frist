@@ -1,0 +1,13 @@
+public class Test {
+	public static void main(String[] args) {
+		int i = 0;
+		int key = 1;
+		for(i = 31; i >= 1; i -= 2) {//右移寄数位，表示偶数位
+			System.out.printf("%d",(key >> i) & 1);
+		}
+		System.out.println();
+		for(i = 30; i >= 0; i -= 2) {//右移偶数位，表示奇数位
+			System.out.printf("%d",(key >> i) & 1);
+		}
+	}
+}
