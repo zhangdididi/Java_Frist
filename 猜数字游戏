@@ -1,0 +1,21 @@
+public class Test {
+	public static void main(String[] args) {
+		//先产生一个随机数字
+		Random random = new Random();//默认值根据系统时间
+		int key = random.nextInt(99) + 1;
+		//反复输入数字
+		Scanner sc = new Scanner(System.in);
+		while(true) {
+			System.out.printf("请输入1-100猜测数字： ");
+			int num = sc.nextInt();
+			if(num > key) {
+				System.out.println("大了");
+			} else if(num < key) {
+				System.out.println("小了");
+			} else {
+				System.out.println("猜对了");
+				break;
+			}
+		}
+	}
+}
