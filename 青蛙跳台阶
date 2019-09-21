@@ -1,0 +1,6 @@
+public static int jumpQing(int num) {
+		if(num <= 3) {
+			return num;
+		}
+		return jumpQing(num - 1) + jumpQing(num - 2);
+	}
