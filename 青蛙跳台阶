@@ -1,7 +1,8 @@
 //函数递归
 public static int jumpQing(int num) {
+//三个台阶以下
 	if (num <= 3) {
 		return num;
 	}
-	return jumpQing(num - 1) + jumpQing(num - 2);
+	return jumpQing(num - 1) + jumpQing(num - 2);//num-1台阶跳法次数加num-2台阶跳法次数
 }
