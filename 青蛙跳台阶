@@ -1,3 +1,4 @@
+//函数递归
 public static int jumpQing(int num) {
 	if (num <= 3) {
 		return num;
