@@ -13,6 +13,7 @@ public class Test {
 			b = tmp % 10;//5
 			tmp /= 10;//1
 			c = tmp % 10;//1
+			//判断每一位数的三次方相加等于i，打印i
 			if(a*a*a + b*b*b + c*c*c == i) {
 				System.out.printf("%d ", i);
 			}
