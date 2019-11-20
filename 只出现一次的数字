@@ -1,0 +1,16 @@
+class Solution {
+    public int singleNumber(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int x : nums) {
+            int count = map.getOrDefault(x, 0);
+            map.put(x, count + 1);
+        }
+        //循环结束相当于把没个数字出现的次数都统计好
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            if (entry.getValue() == 1) {
+                return entry.getKey();
+            }
+        }
+        return 0;
+    }
+}
